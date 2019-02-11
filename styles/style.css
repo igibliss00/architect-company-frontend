@@ -1,0 +1,223 @@
+body {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    color: rgba(204, 204, 204, 0.829);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    margin-left: -10px;
+    margin-top: -10px;
+    padding: 0;
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+} 
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    -webkit-box-shadow: 3px 6px 9px -1px rgba(0,0,0,0.32);
+    -moz-box-shadow: 3px 6px 9px -1px rgba(0,0,0,0.32);
+    box-shadow: 3px 6px 9px -1px rgba(0,0,0,0.32); 
+}
+
+
+.logo, .menu div {
+    padding: 3px 30px
+}
+
+.menu {
+    display: flex;  
+}
+
+
+/* a:link, a:visited {
+
+} */
+
+.logo:hover h2, .menu:hover h2 {
+    color:  black;
+}
+
+.logo:active h2, .logo:active h2 {
+    color: darkslateblue;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    nav, .menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        line-height: 5px;
+    }
+}
+
+main {
+    padding: 40px 10px;
+}
+
+.hero-image {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/lance.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.title {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 3em;
+}
+
+span {
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    padding: 7px;
+}
+
+.projects {
+    margin-top: 50px
+}
+
+hr {
+    border-color: rgb(223, 221, 221);
+}
+
+.projects-image {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+}
+
+.house {
+    flex: 30%;
+    height: 200px;
+    margin: 10px;
+    background-size: cover;
+}
+
+.house:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+[data-house=house1] {
+    background-image: url("../images/house1.jpg");
+}
+
+[data-house=house2] {
+    background-image: url("../images/house2.jpg");
+}
+
+[data-house=house3] {
+    background-image: url("../images/house3.jpg");
+}
+
+[data-house=house4] {
+    background-image: url("../images/house4.jpg");
+}
+
+[data-house=house5] {
+    background-image: url("../images/house5.jpg");
+}
+
+[data-house=house6] {
+    background-image: url("../images/house6.jpg");
+}
+
+.house-type {
+    background-color: black;
+    color: white;
+    width: 40%;
+    line-height: 2em;
+    font-size: 2em;
+    text-align: center;
+}
+
+@media screen and (max-width: 758px) {
+    .house {
+        flex: 100%;
+    }
+
+    .house-type {
+        font-size: 1em;
+    }
+}
+
+footer {
+    padding: 10px;
+}
+
+p {
+    font-size: 2em;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.members {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.member-profile {
+    flex: 25%;
+  
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.profile {
+    text-align: center;
+}
+
+@media screen and (max-width: 758px) {
+    .member-profile {
+        flex: 100%;
+        width: 100%;
+    }
+}
+
+form {
+    margin: 10px;
+}
+
+input {
+    width: 95%;
+    line-height: 3em;
+    padding: 3px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: black;
+    color: white;
+    line-height: 3em;
+}
